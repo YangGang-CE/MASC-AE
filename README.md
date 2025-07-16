@@ -39,15 +39,15 @@ tqdm==4.65.0
 
 ## Dataset Structure
 The dataset should be organized as follows:
- data/
-  ├── crack_images/
-  │   ├── crack_1_1.npy
-  │   ├── crack_1_2.npy
-  │   └── ...
-  └── stress_fields/
-    ├── 1_var_Stress_1_Z.npy
-    ├── 1_var_Stress_2_Z.npy
-    └── ...
+data/
+├── crack_images/
+│   ├── crack_1_1.npy
+│   ├── crack_1_2.npy
+│   └── ...
+└── stress_fields/
+├── 1_var_Stress_1_Z.npy
+├── 1_var_Stress_2_Z.npy
+└── ...
 - Crack Images : Binary or grayscale crack pattern images (256×256)
 - Stress Fields : Corresponding Von Mises stress distributions (256×256)
 
@@ -129,15 +129,15 @@ The testing script generates:
 - TensorBoard logs for training monitoring
 
 ## File Structure
- MASC-AE/
- ├── model.py              # Model architecture definitions
- ├── train.py              # Training script
- ├── test.py               # Testing and evaluation script
- ├── dataset.py            # Dataset loading and preprocessing
- ├── requirements.txt      # Dependencies
- ├── utils/
- │   └── loss_utils.py     # Loss function implementations
- └── README.md            # This file
+MASC-AE/
+├── model.py            # Model architecture definitions
+├── train.py            # Training script
+├── test.py             # Testing and evaluation script
+├── dataset.py          # Dataset loading and preprocessing
+├── requirements.txt    # Dependencies
+├── utils/
+│   └── loss_utils.py   # Loss function implementations
+└── README.md           # This file
 
 ## Key Features Implementation
 ### Data Augmentation
