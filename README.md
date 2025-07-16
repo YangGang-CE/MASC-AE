@@ -198,6 +198,6 @@ If you use this code in your research, please cite:
 @article{masc_ae_2025,
   title={ROCKS (Risk, Operations, Crack, Knowledge, Stress), a georeferenced framework for real-time tunnel face risk assessment and construction advice via AI-driven stress analysisn},
   author={Yang Gang},
-  journal={Your Journal},
+  journal={Journal},
   year={2025}
 }
