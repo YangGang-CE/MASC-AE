@@ -2,7 +2,7 @@ import argparse
 import os
 import torch
 import torch.optim as optim
-from torch.optim.lr_scheduler import ReduceLROnPlateau  # 新增
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import random_split
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
@@ -71,8 +71,6 @@ def train_simplified_model(model, train_loader, val_loader, optimizer, device,
             # 前向传播
             stress_pred = model(data)
             
-            # 计算损失
-            from utils.loss_utils import single_task_loss_function
             total_loss, mse_loss, ssim_loss, gradient_loss = single_task_loss_function(
                 stress_pred, targets,
                 mse_weight=mse_weight,
@@ -253,7 +251,7 @@ def visualize_simplified_results(model, data_loader, device, save_dir, epoch, nu
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Multi-task AutoEncoder for Von Mises Stress Prediction')
+    parser = argparse.ArgumentParser(description='MASC-AE: Multi-Attention Von Mises Stress Correlation AutoEncoder')
     parser.add_argument('--batch_size', type=int, default=32, help='batch size for training')
     parser.add_argument('--epochs', type=int, default=1000, help='number of epochs to train')
     parser.add_argument('--lr', type=float, default=5e-5, help='learning rate')
