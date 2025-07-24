@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from model import ssim  # 添加这行导入ssim函数
+from model import ssim
 
 
 def gradient_loss(pred, target, reduction='mean'):
