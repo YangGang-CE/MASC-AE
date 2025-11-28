@@ -198,9 +198,9 @@ The project includes a custom SSIM (Structural Similarity Index) implementation 
 
 ## Citation
 If you use this code in your research, please cite:
-@article{masc_ae_2025,
-  title={ROCKS (Risk, Operations, Crack, Knowledge, Stress), a georeferenced framework for real-time tunnel face risk assessment and construction advice via AI-driven stress analysisn},
+@article{MASC_AE_2025,
+  title={TESSERACT: TEmporal rock mass Stress Simulation and Expert Reasoning Advice for tunnel Construction},
   author={Yang Gang},
-  journal={Journal},
+  journal={Automation in Construction},
   year={2025}
 }
